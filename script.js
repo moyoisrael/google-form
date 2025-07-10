@@ -45,7 +45,15 @@ body.innerHTML += `
     </form>
   </section>
   </main> `
+
+// calling the body to add the HTML code above
+  const form = document.getElementById("signup-form");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
   // Function to validate single input live
+
   function validateInput(input) {
     if (input === firstName && input.value.trim() === "") {
       showError(input, "First Name cannot be empty");
