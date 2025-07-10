@@ -92,12 +92,12 @@ const password = document.getElementById("password");
     }
 
     if (!checkEmail(email.value)) {
-      showError(email, "Looks like this is not an email");
+      showError(email, "Email cannot be empty or is not a valid email");
       hasError = true;
     }
 
     if (password.value.trim() === "" || password.value.length < 8) {
-      showError(password, "Password cannot be empty or too short");
+      showError(password, "Password cannot be empty or less than 8 characters");
       hasError = true;
     }
 
