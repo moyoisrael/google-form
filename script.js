@@ -138,4 +138,4 @@ const password = document.getElementById("password");
 
   // Listen to form submit
   form.addEventListener("submit", validateForm);
-const form = document.getElementById("signup-form");
+
